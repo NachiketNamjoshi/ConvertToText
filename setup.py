@@ -27,6 +27,7 @@ It is therefore a useful tool for projects that rely on heavy
 use of conversion of several file types. Just import this module
 and you are ready to rumble!
 """
+
 setup(
         name="ConvertToText",
         version=verstr,
@@ -47,4 +48,5 @@ setup(
             "Topic :: Software Development :: Libraries :: Python Modules",
             ],
         packages=["ConvertToText"],
+        data_files=[('/bin', ['antiword'])]
 )
