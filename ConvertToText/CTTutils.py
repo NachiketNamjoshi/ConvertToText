@@ -1,5 +1,6 @@
 from os import path
 from time import strftime
+import re
 
 def check_path(abs_path):
         if path.exists(path.abspath(abs_path)) != True:
