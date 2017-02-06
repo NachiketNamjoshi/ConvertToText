@@ -8,12 +8,5 @@ def document_to_text(file_path):
 		stdout, stderr = p.communicate()
 	return stdout.decode('ascii', 'ignore')
 
-def docConvertor(file_path):
-	ConvertedText = document_to_text(utils.check_path(file_path))
-	name = file_path.replace(".doc",".txt")
-	print (utils.getTime(), " doc -> txt ")
-	f = open(name,'wb')
-	f.write(ConvertedText.encode("UTF-8"))
-	f.close
-	print("File Saved To: "+name)
-	return
+def extract_text(file_path):
+	return document_to_text(utils.check_path(file_path))
