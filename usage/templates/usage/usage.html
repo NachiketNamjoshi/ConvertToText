@@ -1,0 +1,61 @@
+{% extends "usage/box.html" %}
+{% block content %}
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="topbar-nav">
+                <ul class="topbar-nav">
+                    <li class="topbar-nav"><h1>ConvertToText - Usage Guide</h1></li>
+                    
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                            <p>
+                                <ul>
+                                    <li>Once Installed ConvertToText, you can directly <code>import</code> ConvertToText.</li>
+                                    <li>A few example usage with all the file formats.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                <h3><b>NOTE:</b></h3>
+                                <p>
+                                    ConvertToText returns the string that has the converted text from any file format.
+                                </p>
+                            </p>
+                            <ul>
+                            	<li>
+                            		<h4><b>PDF</b></h4>
+                            		Converting PDF can be done by using <code>extract_text()</code> in <code>ConvertToText.pdfConvertor</code>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">from</span> <span style="color: #000000">ConvertToText</span> <span style="color: #204a87; font-weight: bold">import</span> <span style="color: #000000">pdfConvertor</span>
+<span style="color: #204a87; font-weight: bold">print</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">pdfConvertor</span><span style="color: #ce5c00; font-weight: bold">.</span><span style="color: #000000">extract_text</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87">input</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Absolute Path To File: &quot;</span><span style="color: #000000; font-weight: bold">)))</span>
+</pre></div>
+
+<br /><p>or you could just store the converted text into a variable and proceed from there on out.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">from</span> <span style="color: #000000">ConvertToText</span> <span style="color: #204a87; font-weight: bold">import</span> <span style="color: #000000">pdfConvertor</span>
+<span style="color: #000000">ConvertedText</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">pdfConvertor</span><span style="color: #ce5c00; font-weight: bold">.</span><span style="color: #000000">extract_text</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87">input</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;Absolute Path To File: &quot;</span><span style="color: #000000; font-weight: bold">))</span>
+</pre></div></li><li>
+	
+	<h4><b>DOC:</b></h4>
+	<p>Converting a MS <code>.doc</code> file cant also be done by using <code>extract_text()</code> in <code>ConvertToText.docConvertor</code></p>
+	<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">from</span> <span style="color: #000000">ConvertToText</span> <span style="color: #204a87; font-weight: bold">import</span> <span style="color: #000000">docConvertor</span>
+<span style="color: #204a87; font-weight: bold">print</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">docConvertor</span><span style="color: #ce5c00; font-weight: bold">.</span><span style="color: #000000">extract_text</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87">input</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;File Path: &quot;</span><span style="color: #000000; font-weight: bold">)))</span>
+</pre></div>
+
+<br /><p>or you could just store the converted text into a variable and proceed from there on out.</p>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">from</span> <span style="color: #000000">ConvertToText</span> <span style="color: #204a87; font-weight: bold">import</span> <span style="color: #000000">docConvertor</span>
+<span style="color: #000000">ConvertedText</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #000000">docConvertor</span><span style="color: #ce5c00; font-weight: bold">.</span><span style="color: #000000">extract_text</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #204a87">input</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #4e9a06">&quot;File Path: &quot;</span><span style="color: #000000; font-weight: bold">))</span>
+</pre></div>
+
+</li>
+                            </ul>
+                        <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+{% endblock %}

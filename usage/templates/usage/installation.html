@@ -1,0 +1,51 @@
+{% extends "usage/box.html" %}
+{% block content %}
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="topbar-nav">
+                <ul class="topbar-nav">
+                    <li class="topbar-nav"><h1>ConvertToText - Installation Guide</h1></li>
+                    
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                        <p>To install ConvertToText follow the following steps:</p>
+                            <p>
+                                <ul>
+                                    <li>Clone Source From Github (For Being Updated):<p><code>git clone https://github.com/NachiketNamjoshi/ConvertToText</code></p><p><b>OR</b> Download it from <a target="_blank" href="https://github.com/NachiketNamjoshi/ConvertToText/releases">RELEASES</a> Page</p></li>
+                                    <li>Go To the root folder of the source and run <code>setup.py</code> as:
+                                    <p>
+                                        <code>python setup.py install</code>
+                                    </p></li>
+                                </ul>
+                            </p>
+                            <p>
+                                <h3>NOTE:</h3>
+                                <p>
+                                    You <b>MUST</b> fulfill the minimum requirements to <b>USE</b> the Utility.
+                                    <br>The following Libraries must be installed in order to use the respective file type conversion:
+                                    <p>
+                                        <ul>
+                                            <li>PDF -<code>PyPDF</code> - <a target="_blank" href="https://github.com/mstamy2/PyPDF2">mstamy2/PyPDF2</a></li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </p></p>
+                            <p>
+                                <h2>CREDITS:</h2>
+                                <ul>
+                                    <li>PyPDF2 - <a target="_blank" href="https://github.com/mstamy2/PyPDF2">mstamy2/PyPDF2</a></li>
+                                    <li>Antiword - <a target="_blank" href="http://www.winfield.demon.nl/">Adri van Os</a></li>
+                                </ul>
+                            </p>
+                        <!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+   {% endblock %}
